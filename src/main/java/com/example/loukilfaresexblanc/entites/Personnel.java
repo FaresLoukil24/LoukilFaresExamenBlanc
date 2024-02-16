@@ -20,7 +20,7 @@ public class Personnel {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "idPersonnel")
-    long id;
+    int idPersonnel;
     String nomPersonnel;
     String prenomPersonnel;
     LocalDate dateNaissance;

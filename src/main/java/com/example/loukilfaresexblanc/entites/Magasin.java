@@ -19,7 +19,7 @@ public class Magasin {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "idMagasin")
-    long id;
+    int idMagasin;
     String nomMagasin;
     String adresseMagasin;
     String contactMagasin;

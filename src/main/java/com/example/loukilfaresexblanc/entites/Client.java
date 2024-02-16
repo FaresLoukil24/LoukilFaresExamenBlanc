@@ -19,7 +19,7 @@ public class Client {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "idClient")
-    private long id;
+    int idClient;
     String nomClient;
     String prenomClient;
     String adresseClient;
@@ -28,4 +28,6 @@ public class Client {
     @ManyToMany
     List<Magasin>magasins=new ArrayList<>();
 
+    @OneToOne
+    CarteFid carteFid;
 }

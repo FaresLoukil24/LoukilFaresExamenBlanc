@@ -18,11 +18,10 @@ public class CarteFid {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "idCarteFid")
-    long id;
+    int idCarteFid;
     @Column(unique = true)
     long numeroCarte;
     long solde;
     LocalDate dateCreation;
-    @OneToOne
-    Client client;
+
 }
